@@ -1,0 +1,86 @@
+{
+  "sample_version": "v0.1",
+  "generated_on": "2026-10-04",
+  "official_index": "https://www.mext.go.jp/b_menu/toukei/mext_01087.html",
+  "scope": {
+    "prefecture_code": "14",
+    "school_types": [
+      "B1",
+      "C1",
+      "C2"
+    ],
+    "address_prefix": "神奈川県横浜市",
+    "include_retired_attributes": true
+  },
+  "sources": [
+    {
+      "source_file_id": "mext-2025-east",
+      "filename": "20251226-mxt_chousa01-000011635_2.csv",
+      "edition": "before",
+      "basis_date": "2025-05-01",
+      "edition_status": "final",
+      "url": "https://www.mext.go.jp/content/20251226-mxt_chousa01-000011635_2.csv",
+      "retrieved_at": "2026-10-04T14:05:39.651035+09:00",
+      "bytes": 4394598,
+      "sha256": "0d65288d2ec0afcde7858c21a40735c28467fee930612972cada159cf3dfd3b3",
+      "http_headers": {
+        "Content-Type": "text/csv",
+        "Last-Modified": "Fri, 26 Dec 2025 11:00:04 GMT",
+        "Content-Length": "4394598"
+      },
+      "encoding": "cp932",
+      "header_record_number": 1,
+      "data_records": 34163
+    },
+    {
+      "source_file_id": "mext-2026-east-1",
+      "filename": "20260825-mxt_chousa01-000011635_2-1.csv",
+      "edition": "after",
+      "basis_date": "2026-05-01",
+      "edition_status": "provisional",
+      "url": "https://www.mext.go.jp/content/20260825-mxt_chousa01-000011635_2-1.csv",
+      "retrieved_at": "2026-10-04T14:05:34.417062+09:00",
+      "bytes": 4675715,
+      "sha256": "7818b84619ecbd9697f7fd2cefb1e8083867205249b0e6bd128518f70be86a5a",
+      "http_headers": {
+        "Content-Type": "text/csv",
+        "Last-Modified": "Wed, 26 Aug 2026 09:00:11 GMT",
+        "Content-Length": "4675715"
+      },
+      "encoding": "utf-8-sig",
+      "header_record_number": 2,
+      "data_records": 28907
+    },
+    {
+      "source_file_id": "mext-2026-east-2",
+      "filename": "20260825-mxt_chousa01-000011635_2-2.csv",
+      "edition": "after",
+      "basis_date": "2026-05-01",
+      "edition_status": "provisional",
+      "url": "https://www.mext.go.jp/content/20260825-mxt_chousa01-000011635_2-2.csv",
+      "retrieved_at": "2026-10-04T14:05:36.803394+09:00",
+      "bytes": 892607,
+      "sha256": "bbdbc34e63c72336d82e85558262d86ced80788759a3c43132257b70c6fba2c6",
+      "http_headers": {
+        "Content-Type": "text/csv",
+        "Last-Modified": "Wed, 26 Aug 2026 09:00:11 GMT",
+        "Content-Length": "892607"
+      },
+      "encoding": "utf-8-sig",
+      "header_record_number": 2,
+      "data_records": 5557
+    }
+  ],
+  "transforms": [
+    "Detect 12-column header; join source splits by exact school code.",
+    "Select prefecture/school types/address prefix without name matching.",
+    "Keep codes as strings; JSON null/CSV empty for missing values.",
+    "Validate actual dates and format YYYY-MM-DD; retain source_values.",
+    "Compare 11 normalized attributes; separate date-only differences."
+  ],
+  "update_frequency": "Annual basis date; corrections may occur at any time. Fixed snapshot.",
+  "personal_data": "Institution attributes only; no pupil/staff/contact records.",
+  "license_url": "https://www.mext.go.jp/b_menu/1351168.htm",
+  "processed_by": "monlab",
+  "code_license": "MIT"
+}
