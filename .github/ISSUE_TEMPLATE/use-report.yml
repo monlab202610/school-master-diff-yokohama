@@ -1,0 +1,52 @@
+name: 利用報告・検討中の機能への関心
+description: 任意の作業結果と、無料改善／未販売の有料案への関心を分けて記録します
+title: "[利用報告] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        この報告は任意です。学生・顧客のデータ、メール、認証情報、本番ファイルを投稿しないでください。
+        個別返信やサポートの約束はありません。有料案は未制作・未販売です。
+  - type: input
+    id: version
+    attributes:
+      label: 使用した版
+      placeholder: v0.1
+    validations:
+      required: true
+  - type: dropdown
+    id: result
+    attributes:
+      label: 無料サンプルの利用結果
+      options:
+        - 説明を読んだ（処理は未実行）
+        - ファイルを取得した（処理は未実行）
+        - 学校コード照合・変更確認ができた
+        - 実行したが失敗した
+  - type: textarea
+    id: task
+    attributes:
+      label: 対象作業・改善点
+      description: 公開可能な用途だけを記載してください。別日に利用した場合は日付と版を任意で記載できます。
+  - type: dropdown
+    id: additional
+    attributes:
+      label: 追加で必要な内容（任意）
+      options:
+        - 未回答
+        - 無料の説明・利用例の改善
+        - 全国の整形済み全量
+        - 原典更新時の版間差分・検証履歴
+        - 自分の地域や用途の抽出・反復処理
+        - 今のサンプルで十分
+  - type: dropdown
+    id: paid_interest
+    attributes:
+      label: 未販売の価格案への関心（任意、購入申込ではありません）
+      description: 全国整形全量＋版間変更JSON＋検証履歴を2,980円/原典更新回で提供する案です。元の公式データは無料です。
+      options:
+        - 未回答
+        - この案と価格を検討できる
+        - 内容は欲しいがこの価格では検討しない
+        - 自作・無料代替で十分
+        - 現時点では判断できない
