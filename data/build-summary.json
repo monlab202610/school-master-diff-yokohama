@@ -1,0 +1,45 @@
+{
+  "sources": [
+    {
+      "source_file_id": "mext-2025-east",
+      "sha256": "0d65288d2ec0afcde7858c21a40735c28467fee930612972cada159cf3dfd3b3",
+      "bytes": 4394598,
+      "data_records": 34163,
+      "header_record_number": 1,
+      "column_count": 12
+    },
+    {
+      "source_file_id": "mext-2026-east-1",
+      "sha256": "7818b84619ecbd9697f7fd2cefb1e8083867205249b0e6bd128518f70be86a5a",
+      "bytes": 4675715,
+      "data_records": 28907,
+      "header_record_number": 2,
+      "column_count": 12
+    },
+    {
+      "source_file_id": "mext-2026-east-2",
+      "sha256": "bbdbc34e63c72336d82e85558262d86ced80788759a3c43132257b70c6fba2c6",
+      "bytes": 892607,
+      "data_records": 5557,
+      "header_record_number": 2,
+      "column_count": 12
+    }
+  ],
+  "summary": {
+    "before_records": 536,
+    "after_records": 538,
+    "added_to_source": 2,
+    "absent_from_source": 0,
+    "entered_scope": 0,
+    "left_scope": 0,
+    "same_code_attributes_changed": 4,
+    "date_format_only_changed": 532,
+    "after_attribute_retired_records": 11,
+    "after_school_types": {
+      "B1": 355,
+      "C1": 179,
+      "C2": 4
+    }
+  },
+  "validation": "All source keys/columns checked. Postal/date/attribute types checked for selected records and scope transitions."
+}
