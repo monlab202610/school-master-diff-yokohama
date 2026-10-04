@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="480" viewBox="0 0 1120 480" role="img" aria-labelledby="title desc">
+  <title id="title">学校マスター更新差分を確認する流れ</title>
+  <desc id="desc">2025年確定版と2026年暫定版のCSVを読み、文字コード・見出し・日付を調整し、学校コードで比較する。日付表記だけ532コードを分離し、属性変更4、追加2をレビューする。</desc>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="none" stroke="#42616d" stroke-width="1.6"/></marker></defs>
+  <rect width="1120" height="480" rx="20" fill="#f5f8fa"/>
+  <g font-family="-apple-system,BlinkMacSystemFont,'Hiragino Sans','Noto Sans JP',sans-serif">
+    <text x="40" y="52" fill="#142f3c" font-size="24" font-weight="700">学校コードを保ち、更新候補を確認する</text>
+    <text x="40" y="83" fill="#526974" font-size="15">横浜市 × 小・中・義務教育学校 / 2026-10-04取得の原典</text>
+    <g fill="#fff" stroke="#bdd0d8"><rect x="40" y="124" width="210" height="106" rx="12"/><rect x="40" y="252" width="210" height="106" rx="12"/><rect x="300" y="178" width="232" height="136" rx="12"/><rect x="586" y="178" width="226" height="136" rx="12"/><rect x="868" y="124" width="210" height="120" rx="12"/><rect x="868" y="269" width="210" height="120" rx="12"/></g>
+    <g fill="#173b4b" font-size="17" font-weight="600"><text x="60" y="155">2025 確定版</text><text x="60" y="283">2026 暫定版</text><text x="322" y="210">形式をそろえる</text><text x="608" y="210">学校コードで比較</text><text x="890" y="157">確認する差分</text><text x="890" y="302">表記だけの差</text></g>
+    <g fill="#506772" font-size="15"><text x="60" y="183">CP932 / 見出し1行</text><text x="60" y="207">対象 536行</text><text x="60" y="311">UTF-8 BOM / 表題あり</text><text x="60" y="335">対象 538行</text><text x="322" y="239">CSV見出しを検出</text><text x="322" y="265">日付をYYYY-MM-DDへ</text><text x="322" y="291">名称・住所は原文を保持</text><text x="608" y="239">名前で自動統合しない</text><text x="608" y="265">原典の行を追跡</text><text x="608" y="291">範囲の出入りも区別</text><text x="890" y="188">属性変更 4コード</text><text x="890" y="214">追加 2コード</text><text x="890" y="335">日付形式のみ 532</text><text x="890" y="362">変更候補から分離</text></g>
+    <g fill="none" stroke="#42616d" stroke-width="2" marker-end="url(#arrow)"><path d="M250 177 H275 V228 H295"/><path d="M250 305 H275 V264 H295"/><path d="M532 246 H578"/><path d="M812 230 H838 V181 H860"/><path d="M812 265 H838 V325 H860"/></g>
+    <text x="40" y="431" fill="#284553" font-size="16">差分は取り込み前にレビュー。新設・閉校・統合を自動判定するものではありません。</text>
+    <text x="40" y="458" fill="#617580" font-size="13">出典：文部科学省「学校コード一覧」 / 抽出・日付整形・比較と図解：monlab（Codex）</text>
+  </g>
+</svg>
